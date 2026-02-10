@@ -1,0 +1,126 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+         body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0a2540 0%, #1a4d6d 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ==================== LOGO ==================== */
+        .logo-container {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 30px 0;
+        }
+
+        .logo {
+            max-width: 300px;
+            width: 100%;
+            height: auto;
+        }
+
+        /* ==================== CONTATOS ==================== */
+        .contact-item {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* ==================== ÍCONES ==================== */
+        .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .icon img {
+            width: 70%;
+            height: 70%;
+            object-fit: contain;
+        }
+
+        /* ==================== TEXTO ==================== */
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 12px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        .contact-value {
+            font-size: 16px;
+            color: #0a2540;
+            font-weight: 500;
+        }
+
+        /* ==================== RESPONSIVO ==================== */
+        @media (max-width: 600px) {
+            .logo {
+                max-width: 250px;
+            }
+
+            .contact-item {
+                padding: 15px 20px;
+            }
+
+            .icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .contact-value {
+                font-size: 14px;
+            }
+        }
+
+        /* ==================== FOOTER ==================== */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #ccc;
+            font-size: 14px;
+        }
+
+        footer h3 {
+            color: #fff;
+            margin-bottom: 5px;
+        }
+
+        .footer-bottom {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #aaa;
+            border-top: 1px solid #333;
+            padding-top: 15px;
+        }
